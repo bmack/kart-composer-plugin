@@ -1,0 +1,40 @@
+{
+    "name": "bmack/kart-composer-plugin",
+    "type": "composer-plugin",
+    "description": "An composer plugin to fetch listeners provided by composer packages",
+    "keywords": [
+        "PSR-14",
+        "PHP-FIG"
+    ],
+    "homepage": "https://github.com/bmack/kart-composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benni Mack",
+            "email": "benjamin.mack@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "class": "Bmack\\KartComposerPlugin\\Plugin"
+    },
+    "require": {
+        "php": "^7.2",
+        "composer-plugin-api": "^1.1",
+        "psr/event-dispatcher": "^0.7.0",
+        "roave/better-reflection": "^3.2"
+    },
+    "require-dev": {
+        "composer/composer": "^1.8",
+        "phpunit/phpunit": "^7.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bmack\\KartComposerPlugin\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

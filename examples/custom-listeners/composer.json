@@ -1,0 +1,31 @@
+{
+    "name": "bmack/custom-listeners",
+    "description": "Provides listeners for events",
+    "keywords": [
+        "PSR-14",
+        "PHP-FIG"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benni Mack",
+            "email": "benjamin.mack@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "psr-14": {
+            "default": "src/Listeners"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "psr/event-dispatcher": "^0.7.0"
+    },
+    "autoload": {
+        "files": ["src/AppenderListener.php"],
+        "psr-4": {
+            "Bmack\\CustomListeners\\": "src"
+        }
+    }
+}
