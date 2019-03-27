@@ -21,7 +21,7 @@
     "require": {
         "php": "^7.2",
         "composer-plugin-api": "^1.1",
-        "psr/event-dispatcher": "^0.7.0",
+        "psr/event-dispatcher": "^1.0",
         "roave/better-reflection": "^3.2"
     },
     "require-dev": {
